@@ -7,6 +7,32 @@ that were removed.
 
 // Your code here 
 
+function popper(arr, num)  {
+// ensure num is not negative and doesnt exceed arr length
+    if (num < 0) {
+        throw new Error('Number of elements to remove cannot be negative');
+    }
+// calculate number of elements to remove
+    num = Math.min(num, arr.length);
+    
+// extract elements to be removed
+    let removedElements = arr.slice(-num);
+    
+// remove elements from original array
+    arr.splice(-num, num);
+    
+// return new array containing removed elements
+    return removedElements;    
+
+}
+
+
+
+
+
+
+
+
 
 // let arr1 = ['a', 'b', 'c', 'd', 'e'];
 // console.log(popper(arr1, 2)); // [ 'e', 'd' ]

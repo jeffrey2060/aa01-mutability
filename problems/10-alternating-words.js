@@ -6,6 +6,28 @@ fully uppercase or lowercase. The first word should be uppercase.
 
 // Your code here 
 
+function alternatingWords(words)  {
+// loop thru each word in array
+     for (let i = 0; i < words.length; i++) {
+     if (i % 2 === 0)  {
+// convert to UpperCase
+    words[i] = words[i].toUpperCase();
+
+     } else {
+        words[i] = words[i].toLowerCase();
+        }
+     }   
+     return words;
+}
+
+
+
+
+
+
+
+
+
 // let words1 = [ 'Belka', 'STRELKA', 'laika', 'DEZIK' ];
 // alternatingWords(words1);
 // console.log(words1); // [ 'BELKA', 'strelka', 'LAIKA', 'dezik' ]

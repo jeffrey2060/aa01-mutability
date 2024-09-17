@@ -6,6 +6,29 @@ that are divisible by either 4 or 6, but not both.
 
 // Your code here 
 
+function pitPat(max) {
+// initialize empty array to store results
+    let result = [];
+
+// loop thru all pos numbers less than or equal to max
+    for (let i = 1; i <= max; i++) {
+// check if i is divisible by 4 or 6 but not both
+    if ((i % 4 === 0 || i % 6 === 0) && !(i % 4 === 0 && i % 6 === 0))  {
+        result.push(i);
+        }        
+    }   
+    return result;
+}
+
+
+
+
+
+
+
+
+
+
 
 // console.log(pitPat(18)); // [ 4, 6, 8, 16, 18 ]
 // console.log(pitPat(30)); // [ 4, 6, 8, 16, 18, 20, 28, 30 ]

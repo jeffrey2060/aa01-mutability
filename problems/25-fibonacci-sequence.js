@@ -8,6 +8,37 @@ numbers of the sequence.
 
 // Your code here 
 
+function fibonacciSequence(length) {
+// handle edge cases
+    if (length <= 0) {
+        return [];
+    }    
+    if (length === 1)  {
+        return [1];
+    }
+// initialize fibbonacci sequence
+    let sequence = [1, 1];
+    
+// generate sequence to desired length
+    while (sequence.length < length) {
+
+// add next number by adding the last 2 numbers
+    let nextNumber = sequence[sequence.length - 1] + sequence[sequence.length - 2];
+    sequence.push(nextNumber);        
+    }    
+    return sequence;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 // console.log(fibonacciSequence(4));  // [ 1, 1, 2, 3 ]
 // console.log(fibonacciSequence(5));  // [ 1, 1, 2, 3, 5 ]

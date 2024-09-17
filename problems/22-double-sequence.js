@@ -8,6 +8,34 @@ element of the sequence.
 
 // Your code here 
 
+function doubleSequence(base, length)  {
+// return empty array if length is less than 1
+    if (length < 1) {
+        return [];
+    }
+
+// initialize result array with the base element
+    let sequence = [base];
+    
+// generate sequence until it reaches specified length
+    while (sequence.length < length) {
+// double last element and add it to array
+    sequence.push(sequence[sequence.length - 1] * 2);        
+    }    
+    return sequence;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // console.log(doubleSequence(7, 3));  // [7, 14, 28]
 // console.log(doubleSequence(3, 5));  // [3, 6, 12, 24, 48]
 // console.log(doubleSequence(5, 3));  // [5, 10, 20]

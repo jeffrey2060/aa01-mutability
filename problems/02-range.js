@@ -9,6 +9,25 @@ an empty array.
 
 // Your code here 
 
+function range(min, max)  {
+// check if min is greater than max
+    if (min > max)  {
+        return [];
+    }  
+// create empty array to store range
+    let rangeArray = [];
+// use loop to add each num from min to max(inclusive)
+    for (let i = min; i <= max; i++)  {
+        rangeArray.push(i);
+    }         
+        return rangeArray;    
+}
+
+
+
+
+
+
 
 // console.log(range(3, 10));    // [ 3, 4, 5, 6, 7, 8, 9, 10 ]
 // console.log(range(217, 220)); // [ 217, 218, 219, 220 ]

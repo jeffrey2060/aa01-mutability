@@ -6,6 +6,26 @@ into num with no remainder.
 
 // Your code here 
 
+function factorsOf(num) {
+// initialize empty array to store results
+    let factors = [];
+    
+// loop from 1 to num
+    for (let i = 1; i <= num; i++)  {
+// check if 1 is a factor of num
+    if (num % i === 0) {
+        factors.push(i);
+        }        
+    }   
+    return factors; 
+}
+
+
+
+
+
+
+
 
 // console.log(factorsOf(9)); // [ 1, 3, 9 ]
 // console.log(factorsOf(10)); // [ 1, 2, 5, 10 ]

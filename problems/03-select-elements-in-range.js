@@ -9,6 +9,27 @@ inclusive.
 
 // Your code here 
 
+function selectElementsInRange(array, start, end)  {
+// check if start is greater than end
+    if (start > end) {
+        return [];
+    }    
+// create empty array to store elements
+    let selectedElements =  [];
+// use loop to add elements within the range to array
+    for (let i = start; i <= end; i++)  {
+    selectedElements.push(array[i]);     
+    }
+// return new array    
+    return selectedElements;
+
+}
+
+
+
+
+
+
 
 // console.log(selectElementsInRange([1, 2, 3], 0, 1));        // [1, 2]
 // console.log(selectElementsInRange([2, 6, 9, 3, 1], 0, 3));  // [2, 6, 9, 3]

@@ -6,6 +6,27 @@ array.
 
 // Your code here 
 
+function tripler(nums)  {
+// create new array to store results
+    let result = [];
+// loop thru each element in nums
+    for (let i = 0; i < nums.length; i++) {
+// triple element and add it to nums array
+result.push(nums[i] * 3);  
+    }
+// return results array
+    return result;  
+
+}
+
+
+
+
+
+
+
+
+
 
 // console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
 // console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]

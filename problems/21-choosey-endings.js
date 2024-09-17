@@ -7,6 +7,22 @@ empty array.
 
 // Your code here 
 
+function chooseyEndings(words, suffix) {
+// check if first arg is an array
+    if (!Array.isArray(words)) {
+        return [];
+    }    
+// filter array to include only words that end with given suffix
+    return words.filter(word => word.endsWith(suffix));    
+}
+
+
+
+
+
+
+
+
 
 // console.log(chooseyEndings(['family', 'hound', 'catalyst','fly', 'timidly', 'bond'], 'ly'));
 // //=> [ 'family', 'fly', 'timidly' ]

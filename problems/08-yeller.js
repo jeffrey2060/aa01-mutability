@@ -5,6 +5,23 @@ return a NEW array where each element of the original array is yelled.
 
 // Your code here 
 
+function yeller(words)  {
+// create new array to store yelled words
+    let yelledWords = [];
+// loop thru each word in words array
+    for (let i = 0; i < words.length; i++)  {
+// convert to upper case
+    yelledWords.push(words[i].toUpperCase() + '!');        
+    }  
+    return yelledWords;  
+}
+
+
+
+
+
+
+
 
 // let words1 = ['hello', 'world'];
 // let yelled1 = yeller(['hello', 'world']);

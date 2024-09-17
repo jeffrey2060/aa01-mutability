@@ -9,6 +9,30 @@ HINT: you can use Array's slice() method to create a copy of an array
 
 // Your code here 
 
+function rotateRight(array, num) {
+// handle edge cases
+    if (array.length === 0) return [];
+    
+// normalize num to be within bounds of array length
+    const length = array.length;
+    num = num % length;
+    
+// if num is negative, convert it to pos rotation
+    if (num < 0) {
+        num = length + num;
+    }    
+// if num is 0, return a copy of original array
+    if (num === 0) {
+        return array.slice();
+    }
+// perform rotation and return new array
+    return array.slice(-num).concat(array.slice(0, -num));    
+
+}
+
+
+
+
 
 // let arr = ['a', 'b', 'c', 'd', 'e'];
 // console.log(rotateRight(arr, 2)); // [ 'd', 'e', 'a', 'b', 'c' ]
